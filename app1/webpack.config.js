@@ -14,7 +14,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)(\?.*)?$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
             },
@@ -35,11 +35,17 @@ module.exports = {
             filename: "remoteEntry.js",
             // 唯一ID，用于标记当前服务
             name: "app1",
-            library: { type: "var", name: "app1" },
+            // library: { type: "var", name: "app1" },
             // 需要暴露的模块，使用时通过 `${name}/${expose}` 引入
             exposes: {
                 './Header': "./src/components/Header.vue",
-            }
+            },
+            remotes: {
+              fdTest: 'fdTest@http://localhost:3004/remoteEntry.js',
+              sample: "sample@http://localhost:8081/remoteEntry.js",
+              // mktAntd: 'mktAntd@http://localhost:8000/remoteEntry.js',
+              // nextLib: 'nextLib@http://localhost:3000/remoteEntry.js',
+            },
           })
       ]
 }
