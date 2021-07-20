@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <Header name="app2"/>
+      <Header name="The feade"/>
   </div>
 </template>
 <script>

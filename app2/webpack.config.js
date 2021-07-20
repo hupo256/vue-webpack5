@@ -35,8 +35,6 @@ module.exports = {
           remotes: {
             app1: "app1@http://localhost:3000/remoteEntry.js",
             fdTest: 'fdTest@http://localhost:3004/remoteEntry.js',
-            // mktAntd: 'mktAntd@http://localhost:8000/remoteEntry.js',
-            // nextLib: 'nextLib@http://localhost:3000/remoteEntry.js',
           },
         })
       ]

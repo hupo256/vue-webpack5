@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>这是一个头部导航{{name}}</h1>
+        <h1>我来自vue的 3003 {{name}}</h1>
         <h2>哈哈哈哈哈 成功了!!!!!</h2>
     </div>
 </template>
